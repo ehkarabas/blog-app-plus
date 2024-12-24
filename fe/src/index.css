@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply min-h-screen font-firaCode text-black dark:bg-slate-500 dark:text-white;
+  }
+
+  input,
+  textarea {
+    @apply ring-0 !important;
+  }
+
+  input {
+    @apply hover:dark:outline-white hover:outline-yellow-500 !important;
+  }
+
+  /* nav {
+    @apply flex justify-center items-center mt-4;
+  }
+
+  nav h3 {
+    @apply m-4 cursor-pointer hover:text-indigo-400 text-slate-400;
+  }
+
+  form {
+    @apply w-[95%] max-w-sm my-0 mx-auto;
+  }
+
+  form label {
+    @apply text-sm font-bold block text-left mt-4 mx-0 mb-1;
+  }
+
+  input,
+  select {
+    @apply w-full p-2 text-lg text-black border-[2px] border-solid border-sky-700 bg-slate-400 rounded-lg outline-none focus:bg-sky-300 placeholder:text-zinc-600 !important;
+  }
+
+  input[type="checkbox"] {
+    @apply w-fit mr-2 scale-125 !important;
+  }
+
+  button {
+    @apply block my-4 mx-0 p-2 bg-sky-400 text-gray-700 border-none rounded-sm w-full text-sm font-bold cursor-pointer disabled:opacity-30 !important;
+  } */
+}
+
+@layer components {
+  .btn-success {
+    @apply focus:outline-none text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-lg px-5 py-2.5 mr-2 mb-2 w-full mt-[15px] dark:bg-cyan-600 dark:hover:bg-green-700 dark:focus:ring-green-900;
+  }
+
+  /* .forms input {
+    @apply focus:outline-none !important;
+  } */
+
+  /* .App {
+    @apply text-center py-20 px-4;
+  }
+
+  .error {
+    @apply text-red-400 text-sm text-left mt-1;
+  }
+
+  .checkbox {
+    @apply flex justify-start items-center mt-4;
+  }
+
+  .checkbox label {
+    @apply m-0 !important;
+  }
+
+  .input-error {
+    @apply border-red-400 !important;
+  } */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
